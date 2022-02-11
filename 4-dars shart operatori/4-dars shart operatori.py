@@ -450,3 +450,61 @@ elif x>99 and x<1000:
 else:
     print("Kiritgan soningiz 3 xonalidan kichik bolishi kerak")
 
+
+# ![image.png](attachment:image.png)
+
+# In[ ]:
+
+
+# if junior
+n = int(input("<<< 1 <= N <= 99 >>> son kiriting: "))
+on = n//10
+bir = n%10
+if n<=99:
+    if bir==1:
+        bir = "bir"
+    elif bir==2:
+        bir = "ikki"
+    elif bir==3:
+        bir = "uch"
+    elif bir==4:
+        bir = "to'rt"
+    elif bir==5:
+        bir = "besh"
+    elif bir==6:
+        bir = "olti"
+    elif bir==7:
+        bir = "yetti"
+    elif bir==8:
+        bir = "sakkiz"
+    elif bir==9:
+        bir = "to'qqiz"
+    elif bir==10:
+        bir = "o'n"
+    
+    if on==1:
+        on = "o'n"
+    elif on==2:
+        on = "yigirma"
+    elif on==3:
+        on = "o'ttiz"
+    elif on==4:
+        on = "qirq"
+    elif on==5:
+        on = "ellik"
+    elif on==6:
+        on = "oltmish"
+    elif on==7:
+         on = "yetmish"
+    elif on==8:
+        on = "sakson"
+    elif on==9 :
+        on = "to'qson"
+
+if on==0:
+    print(bir)
+else:
+    print(f"{on} {bir}")
+
+   
+
