@@ -1,8 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # 1-dars kiritish chiqarish 
-# jami:40
+# # 11/02/2022
+# 
+# # Python asoslari
+# 
+# # 1-dars: Kiritish va chiqarish
+# 
+# # Muallif: Farrux Sotivoldiyev
+# 
 
 # In[1]:
 
