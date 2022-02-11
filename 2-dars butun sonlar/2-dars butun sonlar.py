@@ -5,7 +5,7 @@
 # 
 # # Python asoslari
 # 
-# # 1-dars: Butun sonlar. Qoldiqli va butun bo'lish
+# # 2-dars: Butun sonlar. Qoldiqli va butun bo'lish
 # 
 # # Muallif: Farrux Sotivoldiyev
 
