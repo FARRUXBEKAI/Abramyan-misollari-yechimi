@@ -37,12 +37,15 @@ else:
     print("Xato")
 
 
-# # Vazifa 2
-# ![image.png](attachment:image.png)
-
-# In[91]:
+# In[92]:
 
 
+# vazifa 2
+# sharq kalendarida 60 yillik davr qabul qilingan.Yil muchali 5ta rang (yashil
+# qizil,sariq,oq va qora) va 12 ta hayvon (sichqon,sigir,yo'lbars,quyon
+# ajdar,ilon,ot,qo'y,maymun,tovuq,it va to'ng'iz) nomlarining kombinatsiyasi
+# dan kelib chiqadi.Yilning raqamiga qarab uning muchalini aniqlovchi program
+# ma tuzilsin.1984-yil davr boshi:"Yashil sichqon yili"
 
 y = int(input("Year = "))
 h = (y-4)%12
