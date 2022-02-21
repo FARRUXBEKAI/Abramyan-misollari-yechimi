@@ -241,7 +241,7 @@ print("summa:",s)
 # In[41]:
 
 
-#for21
+#for21      e = exp(1)-> funksiyasi 
 n = int(input("n = "))
 s = 0
 p = 1
@@ -254,7 +254,7 @@ print(1+s)
 # In[16]:
 
 
-#for22
+#for22     e^x -> funksiyasi 
 n = int(input("n = "))
 x = float(input("x = "))
 s = 0
@@ -268,10 +268,10 @@ print("yeg'indi:",s)
 # In[15]:
 
 
-#for23                     
+#for23     sin(x)-> funksiyasi                
 n = int(input("n = "))
 x = float(input("x = "))
-s = 0
+s = 0 
 p = 1
 for i in range(1,n+1):
     p *= (2*i+1)*2*i
@@ -282,7 +282,7 @@ print('Summa:',x+s)
 # In[12]:
 
 
-#for24                  
+#for24     cos(x)-> funksiyasi             
 n = int(input("n = "))
 x = float(input("x = "))
 p = 1
@@ -305,7 +305,7 @@ for i in range(1,n+1):
 print("Summa:",s)
 
 
-# In[117]:
+# In[7]:
 
 
 #for26
@@ -317,7 +317,7 @@ for i in range(0,n+1):
 print("Summa:",s)
 
 
-# In[1]:
+# In[5]:
 
 
 #for27
@@ -333,7 +333,7 @@ for i in range(1,n+1):
 print("summa:",yegindi+x)
 
 
-# In[32]:
+# In[21]:
 
 
 #for28
@@ -382,13 +382,12 @@ for i in range(n+1):
     a -= c
 
 
-# In[33]:
+# In[8]:
 
 
 #for31
-n = int(input("n = "))
+n = int(input("n =  "))
 A0 = 2
-A1 = 0
 
 for i in range(1,n+1):
     A1 = 2 + 1/A0
@@ -410,7 +409,7 @@ for i in range(1,n+1):
     A0 = A1
 
 
-# In[11]:
+# In[20]:
 
 
 #for33 Fibonachi sonlari 1-usul
@@ -436,6 +435,20 @@ for i in range(1,n+1):
     F = F1 + F2
     F1 = F2
     F2 = F
+
+
+# In[1]:
+
+
+#for33 Fibonachi sonlari 3-usul
+n = int(input("n = "))
+F1 = 1
+F2 = 1
+
+for i in range(1,n+1):
+    print(F1)
+    F2 = F1 + F2
+    F1 = F2 - F1
 
 
 # In[85]:
@@ -504,10 +517,26 @@ for i in range(1,n+1):
 print("Summa:",s)
 
 
+# In[14]:
+
+
+#for39    ichma-ich for universal usul
+a = int(input("A = "))
+b = int(input("B = "))
+if a < b:
+    for i in range(a,b+1):
+        for j in range(i):
+            print(i,end = " ")
+else:
+    for i in range(a,b-1,-1):
+        for j in range(i):
+            print(i,end = " ")
+
+
 # In[62]:
 
 
-#for39                      
+#for39   bitta for                  
 a = int(input("A = "))
 b = int(input("B = "))
 
@@ -515,35 +544,10 @@ for i in range(a,b+1):
     print(f"{i}\n"*i)
 
 
-# In[61]:
+# In[15]:
 
 
-#for40                       
-a = int(input("A = "))
-b = int(input("B = "))
-t = 1
-
-for i in range(a,b+1):
-        print(f"{i}\n"*t)
-        t += 1
-
-
-# In[36]:
-
-
-#for39    ichma-ich for
-a = int(input("A = "))
-b = int(input("B = "))
-
-for i in range(a,b+1):
-    for j in range(i):
-        print(i,end = " ")
-
-
-# In[ ]:
-
-
-#for40     ichma-ich for              
+#for40     ichma-ich for      B > A        
 a = int(input("A = "))
 b = int(input("B = "))
 c = 1
@@ -554,10 +558,23 @@ for i in range(a,b+1):
     c += 1
 
 
-# In[34]:
+# In[19]:
 
 
-#for40 Unversal usul   
+#for40    bitta for         B > A          
+a = int(input("A = "))
+b = int(input("B = "))
+t = 1
+
+for i in range(a,b+1):
+        print(f"{i}\n"*t)
+        t += 1
+
+
+# In[16]:
+
+
+#for40 Universal usul   
 a = int(input("A = "))
 b = int(input("B = "))
 c = 1
