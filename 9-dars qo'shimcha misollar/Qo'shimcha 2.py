@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # 5/03/2022
+# 
+# # Python asoslari
+# 
+# # 9-dars: For operatori misollarni yechish
+# 
+# # Muallif: Farrux Sotivoldiyev
+# 
+
 # # For qo'shimcha masalalar 1
 
 # In[9]:
@@ -312,21 +321,19 @@ while i <= n:
 
 # ![image.png](attachment:image.png)
 
-# In[2]:
+# In[1]:
 
 
 #8
+from math import sqrt
+
 n = int(input("n = "))
 
-i = 3
-while i <= n:
-    x = i
-    y = int((i**2 - 1)/2)
-    z = int((i**2 + 1)/2)
-    
-    if x**2 + y**2 == z**2 and (x<=n and y<=n and z<=n):
-        print("\n",x,y,z,end=" ")
-    i += 1
+for c in range(1,n+1):
+    for b in range(1,c):
+        a = sqrt(c*c - b*b)
+        if a%1==0 and b>a :
+            print(int(a),b,c)
 
 
 # ![image.png](attachment:image.png)

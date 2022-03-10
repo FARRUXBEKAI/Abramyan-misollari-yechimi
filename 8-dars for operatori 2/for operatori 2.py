@@ -845,7 +845,7 @@ for i in range(son):
 print(int(sonlar[::-1]))
 
 
-# In[107]:
+# In[1]:
 
 
 # Universal (x - > 10). O'nli sanoq sistemasidagi sonlarni boshqa bir sanoq sistemasiga o’tkazib 
@@ -861,32 +861,41 @@ for i in str(son):
 print(s)
 
 
-# In[1]:
+# In[9]:
 
 
 # Universal (x - > x). O'nli sanoq sistemasidagi sonlarni boshqa bir sanoq sistemasiga o’tkazib 
 # beruvchi dastur tuzing. 
 
-sanoq = int(input("Qaysi sanoq sistemasida son kiritasiz: "))
-sanoq2 = int(input("Qaysi sanoq sistemasiga o'tkazasiz: "))
-son = int(input(f"{sanoq} lik sanoq sistemasida son kiriting: "))
+kirish = int(input("Qaysi sanoq sistemasida son kiritasiz:<<< 2 - 10>>> "))
+chiqish = int(input("Qaysi sanoq sistemasiga o'tqazasiz:<<< 2 - 10>>> "))
+n = int(input("son kiriting: ")) 
 
-if sanoq < 11 and sanoq2 < 11:
-    s = 0
-    k = len(str(son)) - 1
-    for i in str(son):
-        s += int(i) * sanoq**k
-        k -= 1
+# kiritilgan sanoq sistemasini tekshirish
+kirish_n = n
+while kirish_n:
+    if kirish_n%10 >= kirish:
+        kirish_n = int(input("n = "))
+        n = kirish_n
+        continue    
+    kirish_n //= 10
 
-    sonlar = ''
-    for i in range(s):                      
-        if s % sanoq2 != s // sanoq2:
-            k = s % sanoq2
-            sonlar += str(k)
-            s //= sanoq2
-        else:
-            break
-    print(int(sonlar[::-1]))
-else:
-    print("10 likdan kichik yoki 10 lik sanoq kiriting")
+# 10 lik sanoq sistemasiga o'tish
+onlik = 0
+daraja = 0
+while n > 0:
+    son = n%10
+    onlik += son * (kirish**daraja) 
+    daraja += 1
+    n //= 10
+    
+# kiritilgan sanoq sistemasiga o'tkazish
+summa = 0
+i = 1
+while onlik > 0:
+    son = onlik%chiqish
+    summa += son*i
+    onlik //= chiqish
+    i *= 10
+print(f"{chiqish} lik sanoq sistemasida {summa} ga teng!")
 
