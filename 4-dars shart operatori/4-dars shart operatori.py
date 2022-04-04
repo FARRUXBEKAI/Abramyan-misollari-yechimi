@@ -328,14 +328,24 @@ else:
      print(x,y,"nuqta OX o'qida joylashgan")
 
 
-# In[6]:
+# In[4]:
 
 
-#23     ishlanadi
-x1,y1 = 2,5
-x2,y2 = 8,5
-x3,y3 = 2,2
-if x1==x2 and y1==y3:
+#23   
+x1,y1 = 2,0
+x2,y2 = 9,0
+x3,y3 = 9,5
+
+if x1==x2:
+    x4 = x3
+else:
+    x4 = x1
+    
+if y1 == y2:
+    y4 = y3
+else:
+    y4 = y1
+print(x4,y4)
 
 
 # In[63]:
