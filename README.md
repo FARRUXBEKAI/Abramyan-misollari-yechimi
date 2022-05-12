@@ -1,2 +1,2 @@
 # Abramyan-misollari
-Ushbu repositoryda Abramyan misollarini python dasturlash tilida yechimlari jamlangan
+Ushbu repositoriyda Abramyan misollarini Python dasturlash tilida yechganman.
