@@ -78,7 +78,7 @@ print(Fib1(10))
 
 # ![image.png](attachment:image.png)
 
-# In[22]:
+# In[2]:
 
 
 # Recur5
@@ -87,7 +87,9 @@ def Fib1(N):
     if N-1 <= len(fibonachi)-1:
         return fibonachi[N-1]
     else:
-        return Fib1(N-2) + Fib1(N-1)
+        x = Fib1(N-2) + Fib1(N-1)
+        fibonachi.append(x)
+        return x
     
 print(Fib1(10))
 
